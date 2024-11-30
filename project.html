@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune Movie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #f1f1f1;
+            overflow-x: hidden;
+        }
+
+        .bg-image {
+            background-image: url('https://i.ibb.co/yFGYp1F/1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            animation: fadeIn 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        .bg-title {
+            font-family: 'Merriweather', serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            transform: translate(0, -10%);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .qualities {
+            position: absolute;
+            bottom: 5%;
+            left: 22%;
+            font-size: 1.5rem;
+            font-family: 'Merriweather', serif;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .qualities span {
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 20px;
+            background-color: #000000;
+            border-radius: 8px;
+            margin-top: -10px;
+        }
+
+        h2 {
+            color: #f1f1f1;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #f1f1f1;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figure img {
+            width: 80%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        figure img:hover {
+            transform: scale(1.05);
+        }
+
+        .card {
+            border: none;
+            border-radius: 8px;
+            background-color: #2a2a2a;
+            color: #f1f1f1;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-family: 'Merriweather', serif;
+            font-size: 1.5rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+        }
+
+        iframe {
+            border-radius: 8px;
+            width: 50%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image">
+        <div class="bg-title">Dune: The Epic Journey</div>
+        <div class="qualities">
+            <span>Epic</span>
+            <span>Visual</span>
+            <span>Intense</span>
+            <span>Immersive</span>
+            <span>Thought-provoking</span>
+            <span>Grand</span>
+            <span>Complex</span>
+            <span>Action-packed</span>
+        </div>
+    </div>
+
+    <section>
+        <h2>About the Movie</h2>
+        <p>"Dune" is a 2021 science fiction epic film directed by Denis Villeneuve, based on Frank Herbert's 1965 novel of the same name. The film follows Paul Atreides, a young nobleman who is thrust into the center of a galactic conflict when his family is tasked with ruling the desert planet of Arrakis, the only source of a valuable substance known as "spice." As Paul navigates political intrigue, betrayal, and warfare, he discovers his destiny is intertwined with the planet's mysterious forces and its native people, the Fremen. The movie explores themes of survival, leadership, and the environmental impact of colonialism. It is a visually stunning and immersive adaptation that brings Herbert's complex world to life, featuring a star-studded cast including Timothée Chalamet, Oscar Isaac, Zendaya, and Rebecca Ferguson.</p>
+    </section>
+
+    <section>
+        <h2>Characters</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.ibb.co/pRhyZKz/2.jpg" class="card-img-top" alt="Paul Atreides">
+                    <div class="card-body">
+                        <h5 class="card-title">Paul Atreides</h5>
+                        <p class="card-text">Played by Timothée Chalamet, Paul Atreides is the heir to House Atreides, struggling to take control of Arrakis. As the son of Duke Leto, he faces immense pressure to navigate political intrigue and ensure the survival of his house amidst danger from the ruthless Harkonnens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.ibb.co/3Yv0s5B/3.jpg" class="card-img-top" alt="Chani">
+                    <div class="card-body">
+                        <h5 class="card-title">Chani</h5>
+                        <p class="card-text">Played by Zendaya, Chani is a Fremen warrior and the love interest of Paul Atreides. She plays a crucial role in the fight against the Harkonnen oppressors of Arrakis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.ibb.co/Jq7hNPp/4.jpg" class="card-img-top" alt="Glossu Rabban">
+                    <div class="card-body">
+                        <h5 class="card-title">Glossu Rabban</h5>
+                        <p class="card-text">Played by Dave Bautista, Glossu Rabban is the brutal and violent nephew of Baron Harkonnen. He is assigned to rule Arrakis on behalf of House Harkonnen and is known for his cruelty and intimidation tactics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Trailer</h2>
+        <figure>
+            <iframe src="https://www.youtube.com/embed/8g18jFHCLXk" frameborder="0" allowfullscreen></iframe>
+        </figure>
+    </section>
+
+</body>
+</html>
